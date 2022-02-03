@@ -26,7 +26,7 @@ Desafio este que tive a honra de co-criar com a plataforma de cursos online **[D
 
 A visão de Orientação a Objetos (OO) é aquela de um mundo de objetos que interagem.
 Este paradigma é um modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre classes, atributos, métodos, objetos, entre outros.
-São 4 os pilares principais do POO: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO.
+São 4  os pilares principais do POO: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO.
 
 ### ![small_red_triangle](https://github.githubassets.com/images/icons/emoji/unicode/1f53a.png) ABSTRAÇÃO:
 
