@@ -3,26 +3,9 @@ package br.com.dio.desafio.dominio;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Mentoria {
-    private String titulo;
-    private String descricao;
-    private LocalDate date;
+public class Mentoria extends Conteudo {
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
+    private LocalDate date = LocalDate.now();
 
     public LocalDate getDate() {
         return date;
@@ -33,24 +16,16 @@ public class Mentoria {
     }
 
     @Override
+    public double calcularXp() {
+        return XP_PADRAO + 20d;
+    }
+
+    @Override
     public String toString() {
         return "Mentoria{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", date=" + date +
+                "titulo='" + getTitulo() + '\'' +
+                ", descricao='" + getDescricao() + '\'' +
+                ", date=" + getDate() +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Mentoria mentoria = (Mentoria) o;
-        return Objects.equals(titulo, mentoria.titulo) && Objects.equals(descricao, mentoria.descricao) && Objects.equals(date, mentoria.date);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(titulo, descricao, date);
     }
 }
